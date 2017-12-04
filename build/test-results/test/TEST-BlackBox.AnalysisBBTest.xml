@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BlackBox.AnalysisBBTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-12-04T19:41:43" hostname="Sugandhas-MacBook-Air.local" time="1.852">
+  <properties/>
+  <testcase name="devideSimple2" classname="BlackBox.AnalysisBBTest" time="0.021"/>
+  <testcase name="funName" classname="BlackBox.AnalysisBBTest" time="0.012"/>
+  <testcase name="test2" classname="BlackBox.AnalysisBBTest" time="0.007"/>
+  <testcase name="test3" classname="BlackBox.AnalysisBBTest" time="0.007"/>
+  <testcase name="test4" classname="BlackBox.AnalysisBBTest" time="0.011"/>
+  <testcase name="test5" classname="BlackBox.AnalysisBBTest" time="0.011"/>
+  <testcase name="devideMedium" classname="BlackBox.AnalysisBBTest" time="0.907"/>
+  <testcase name="devideSimple" classname="BlackBox.AnalysisBBTest" time="0.015"/>
+  <testcase name="changenameMediumA" classname="BlackBox.AnalysisBBTest" time="0.858"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

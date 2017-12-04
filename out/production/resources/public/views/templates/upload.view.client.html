@@ -1,0 +1,62 @@
+
+<div class="container-fluid">
+    <div class="left-upload col-md-6">
+            <div>
+                <h1 class="display-2"><label class="subtitle1" for="fileToUpload1">Select your origin project</label><br /></h1>
+
+                <input type="file" ng-model-instant
+                   id="fileToUpload1"
+                       class="btn btn-info"
+                   multiple
+                   name="uploadfile"
+                   accept=".py"
+                   onchange="angular.element(this).scope().setFiles(this)" />
+            </div>
+        <div id="dropbox" class="dropbox col-md-10" ng-class="dropClass"><span>{{dropText}}</span></div>
+        <div class="filetree col-md-10" ng-show="files1.length">
+            <div ng-repeat="file in files1.slice(0)">
+                <span>{{file.webkitRelativePath || file.name}}</span>
+                (<span ng-switch="file.size > 1024*1024">
+                    <span ng-switch-when="true">{{file.size / 1024 / 1024 | number:2}} MB</span>
+                    <span ng-switch-default>{{file.size / 1024 | number:2}} kB</span>
+                </span>)
+            </div>
+        </div>
+    </div>
+
+
+    <div class="right-upload col-md-6">
+        <div>
+            <h1 class="display-2"><label for="fileToUpload2">Select your compare project</label><br /></h1>
+            <input id="fileToUpload2" ng-model-instant
+                   class="btn btn-info"
+                   type="file"
+                   name="uploadfile2"
+                   accept=".py"
+                   multiple
+                   onchange="angular.element(this).scope().setFiles(this)"
+            />
+        </div>
+        <div id="dropbox2" class="dropbox col-md-10" ng-class="dropClass2"><span>{{dropText}}</span></div>
+        <div class="filetree col-md-10" ng-show="files2.length">
+            <div ng-repeat="file in files2.slice(0)">
+                <span>{{file.webkitRelativePath || file.name}}</span>
+                (<span ng-switch="file.size > 1024*1024">
+                    <span ng-switch-when="true">{{file.size / 1024 / 1024 | number:2}} MB</span>
+                    <span ng-switch-default>{{file.size / 1024 | number:2}} kB</span>
+                </span>)
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="upload-info" ng-show="files1.length&&files2.length">
+    <input  class="btn btn-success uploadBtn" type="button" ng-click="uploadFile()" value="Upload" />
+</div>
+
+<div ng-show="progressVisible">
+    <div class="percent">{{progress}}%</div>
+    <div class="progress-bar">
+        <div class="uploaded" ng-style="{'width': progress+'%'}"></div>
+    </div>
+</div>

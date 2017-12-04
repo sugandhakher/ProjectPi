@@ -1,0 +1,31 @@
+
+<div class="container">
+    <div class="centerImg"></div>
+    <div id="typewriter"></div>
+</div>
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent gobutton" href="#!/upload">
+    GO
+</a>
+
+<script>
+    var str = "ProjectPi, Plagiarism Detector, Like Falcon Eyess",
+        i = 0,
+        isTag,
+        text;
+
+    (function type() {
+        text = str.slice(0, ++i);
+        if (text === str) return;
+
+        document.getElementById('typewriter').innerHTML = text;
+
+        var char = text.slice(-1);
+        if( char === '<' ) isTag = true;
+        if( char === '>' ) isTag = false;
+
+        if (isTag) return type();
+        setTimeout(type, 150);
+    }());
+
+
+</script>

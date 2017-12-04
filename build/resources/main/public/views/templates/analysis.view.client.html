@@ -1,0 +1,80 @@
+<div style="text-align:center;">
+<h1 class="kreep">
+    <button ng-show="model.analysisDone == false" ng-click="model.runAnalysis()" class="button button5"><b>Analysis</b></button>
+</h1>
+    <h1 class="kreep">
+        <button ng-show="model.analysisDone == true" ng-click="model.back()" class="button button5"><b>Back</b></button>
+    </h1>
+</div>
+<table class="table-fill">
+    <div class="table-title">
+        <h3>Compare Result</h3>
+    </div>
+    <thead>
+    <tr>
+        <th class="text-left">No</th>
+        <th class="text-left">Involved Origin</th>
+        <th class="text-left">Involved Compare</th>
+        <th class="text-left">Confident</th>
+    </tr>
+    </thead>
+    <tbody class="table-hover">
+    <tr id="{{$index}}" ng-repeat = "plagiarism in model.report.allPlagiarism">
+        <td class="text-left">{{$index + 1}}</td>
+        <td class="text-left">
+            <table >
+                <tr>
+                    <th class="text-left">Involved file</th>
+                    <th class="text-left">Start line</th>
+                    <th class="text-left">End line</th>
+                </tr>
+                <tr ng-switch="plagiarism.originEndline">
+                    <td>
+                       {{plagiarism.originPath}}
+                    </td>
+                    <td ng-switch-when="0">
+                        main function
+                    </td>
+                    <td ng-switch-when="0">
+                        main function
+                    </td>
+                    <td ng-switch-default>
+                        {{plagiarism.originStartline}}
+                    </td>
+                    <td ng-switch-default>
+                        {{plagiarism.originEndline}}
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td class="text-left">
+            <table >
+                <tr>
+                    <th class="text-left">Involved file</th>
+                    <th class="text-left">Start line</th>
+                    <th class="text-left">End line</th>
+                </tr>
+                <tr ng-switch="plagiarism.compareEndline">
+                    <td>
+                        {{plagiarism.comparePath}}
+                    </td>
+                    <td ng-switch-when="0">
+                        main function
+                    </td>
+                    <td ng-switch-when="0">
+                        main function
+                    </td>
+                    <td ng-switch-default>
+                        {{plagiarism.compareStartline}}
+                    </td>
+                    <td ng-switch-default>
+                        {{plagiarism.compareEndline}}
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td class="text-left">{{plagiarism.confident}}</td>
+    </tr>
+    </tbody>
+</table>
+
