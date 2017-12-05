@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e392abe-1dac-4164-9d93-9fa118e7b78d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileContent/fileContent.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" />
@@ -10,12 +9,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/java/main/Analysis/TEDAnalysis.class" afterPath="$PROJECT_DIR$/build/classes/java/main/Analysis/TEDAnalysis.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/11-all-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/build/libs/11-all-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/11-all-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/build/libs/11-all-1.0-SNAPSHOT.jar.original" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar" afterPath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar.original" afterPath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/11.iml" afterPath="$PROJECT_DIR$/.idea/modules/11.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3BaseListener.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3BaseListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3BaseVisitor.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3BaseVisitor.java" />
@@ -23,18 +22,26 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Listener.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Listener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Parser.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Parser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Visitor.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Visitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.AnalysisBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.AnalysisBBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.LoaderBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.LoaderBBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.ProgramBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.ProgramBBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.ReportTests.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.ReportTests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.SampleBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/tests.SampleBBTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.AnalysisBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.AnalysisBBTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.LoaderBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.LoaderBBTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.ProgramBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.ProgramBBTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.SampleBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.SampleBBTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.AnalysisWBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.AnalysisWBTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.LoaderWBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.LoaderWBTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ProgramWBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ProgramWBTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ReportWBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ReportWBTest.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/tests.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/tests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-tests.AnalysisBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-tests.AnalysisBBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-tests.LoaderBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-tests.LoaderBBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-tests.ProgramBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-tests.ProgramBBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-tests.ReportTests.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-tests.ReportTests.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-tests.SampleBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-tests.SampleBBTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/blackBoxTests.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/blackBoxTests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/whiteBoxTests.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/whiteBoxTests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.AnalysisBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.AnalysisBBTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.LoaderBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.LoaderBBTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.ProgramBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.ProgramBBTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.SampleBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.SampleBBTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.AnalysisWBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.AnalysisWBTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.LoaderWBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.LoaderWBTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ProgramWBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ProgramWBTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ReportWBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ReportWBTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Analysis/TEDAnalysis.java" afterPath="$PROJECT_DIR$/src/main/java/Analysis/TEDAnalysis.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -63,21 +70,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnalysisBBTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/AnalysisBBTest.java">
+      <file leaf-file-name="AnalysisBBTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/blackBoxTests/AnalysisBBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2044">
-              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="60">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SampleBBTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/SampleBBTest.java">
+      <file leaf-file-name="ProgramWBTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/whiteBoxTests/ProgramWBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/program/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/program/Program.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PythonNode.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/program/PythonNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -91,7 +128,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -334,8 +371,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4537488758000" />
+        <entry key="$PROJECT_DIR$" value="4537546047000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2882939014" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1124708390" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="631607866" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -489,7 +528,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -506,6 +545,27 @@
               <item name="11" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="program" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -521,7 +581,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="blackBoxTests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="11" type="b2602c69:ProjectViewProjectNode" />
@@ -538,7 +598,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,7 +619,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SampleBBTest">
+  <component name="RunManager" selected="JUnit.AnalysisBBTest (2)">
     <configuration name="AnalysisBBTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -572,6 +632,31 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AnalysisBBTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="AnalysisBBTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="blackBoxTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="11_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="blackBoxTests" />
+      <option name="MAIN_CLASS_NAME" value="blackBoxTests.AnalysisBBTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -759,16 +844,18 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.AnalysisBBTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.AnalysisBBTest (1)" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.SampleBBTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AnalysisBBTest (2)" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SampleBBTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AnalysisBBTest (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AnalysisBBTest" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AnalysisBBTest (2)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SampleBBTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AnalysisBBTest (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AnalysisBBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -792,6 +879,9 @@
     <history-entry file="AnalysisBBTest_(1) - 2017.12.05 at 13h 27m 05s.xml">
       <configuration name="AnalysisBBTest (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AnalysisBBTest_(2) - 2017.12.05 at 18h 22m 16s.xml">
+      <configuration name="AnalysisBBTest (2)" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="SampleBBTest - 2017.12.05 at 13h 29m 52s.xml">
       <configuration name="SampleBBTest" configurationId="JUnit" />
     </history-entry>
@@ -802,7 +892,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -846,10 +936,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BlackBox/AnalysisBBTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/blackBoxTests/AnalysisBBTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -862,19 +952,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BlackBox/AnalysisBBTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/SampleBBTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/SampleBBTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AnalysisBBTest.java" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AnalysisBBTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/BlackBox/AnalysisBBTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/BlackBox/AnalysisBBTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/SampleBBTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AnalysisBBTest.java" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2044">
-          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/blackBoxTests/AnalysisBBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/whiteBoxTests/ProgramWBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/program/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/program/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/program/PythonNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>

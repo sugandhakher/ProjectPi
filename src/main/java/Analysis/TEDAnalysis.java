@@ -152,7 +152,7 @@ public class TEDAnalysis implements Analysis {
                         Plagiarism p = new StandardPlagiarism();
                         p.addToOrigin(tree1.getURL(), tree1.getRoot().getStartline(), tree1.getRoot().getEndline());
                         p.addToCompare(tree2.getURL(), tree1.getRoot().getStartline(), tree2.getRoot().getEndline());
-                        p.setConfident(100 - (distance * aveSize / 10));
+                        p.setConfident(distance);
                         report.addPlagiarism(p);
                     }
 

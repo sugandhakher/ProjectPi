@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="whiteBoxTests.AnalysisWBTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-12-05T23:12:15" hostname="Sugandhas-MacBook-Air.local" time="11.243">
+<testsuite name="whiteBoxTests.AnalysisWBTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-12-05T23:28:11" hostname="Sugandhas-MacBook-Air.local" time="11.11">
   <properties/>
-  <testcase name="divideSimple" classname="whiteBoxTests.AnalysisWBTest" time="0.014"/>
-  <testcase name="changeNameMediumA" classname="whiteBoxTests.AnalysisWBTest" time="1.001"/>
-  <testcase name="divideMedium2" classname="whiteBoxTests.AnalysisWBTest" time="9.275"/>
+  <testcase name="divideSimple" classname="whiteBoxTests.AnalysisWBTest" time="0.017"/>
+  <testcase name="changeNameMediumA" classname="whiteBoxTests.AnalysisWBTest" time="1.025"/>
+  <testcase name="divideMedium2" classname="whiteBoxTests.AnalysisWBTest" time="9.149"/>
   <testcase name="divideSimple2" classname="whiteBoxTests.AnalysisWBTest" time="0.014"/>
-  <testcase name="divideMedium" classname="whiteBoxTests.AnalysisWBTest" time="0.936"/>
+  <testcase name="divideMedium" classname="whiteBoxTests.AnalysisWBTest" time="0.903"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
