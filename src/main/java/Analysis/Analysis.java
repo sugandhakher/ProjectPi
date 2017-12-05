@@ -1,7 +1,7 @@
-package Analysis;
+package analysis;
 
-import Report.Report;
-/** Interface Analysis
+import report.Report;
+/** Interface analysis
  * Role: Component Interface
  * This component contain our major algorithm of determine if two piece of code is similar. After run the analysis
  *  you will get a report which we defined. And we can implement different algorithm in different analysis

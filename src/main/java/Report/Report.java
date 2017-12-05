@@ -1,18 +1,23 @@
-package Report;
+package report;
 
 import java.util.Set;
 import java.util.Map;
-/** Interface Report
+/** Interface report
  * Role: component interface
  *  This component is the result of an analysis, it record all plagiarism we found in two programs
  */
 public interface Report{
-    /** Return to a set of plagiarism, which are all plagiarisms we found
+
+    /**
+     * Retrun Plagiarized set of nodes
      */
     public Set<Plagiarism> getAllPlagiarism();
-    /** Return to a overall statistics, key of map is the name of this statistics, value is the numeric measure
+
+    /**
+     * Return map of all statistics
      */
     public Map<String, Integer> getAllStatistics();
+
     /** Return to unique id of report
      */
 //    public int getReportID();
@@ -21,10 +26,19 @@ public interface Report{
      */
  //   public void generatePDF(String path);
 
+    /**
+     * Detects the plagiarized statistics
+     */
     public void addPlagiarism(Plagiarism p);
 
+    /**
+     * add all statistics to the map
+     */
     public void addStatistics(String name, int value);
 
+    /**
+     * Confirm if programs are plagiarized
+     */
     boolean hasPlagiarism();
 
 }

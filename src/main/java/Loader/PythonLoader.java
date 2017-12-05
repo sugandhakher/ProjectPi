@@ -1,19 +1,16 @@
-package Loader;
+package loader;
 
-import Program.Program;
-
+import program.Program;
+import program.PythonProgramFactory;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.RuleContext;
 import org.antlr.v4.runtime.tree.ParseTree;
-import pythonast.parser.Python3Lexer;
 import pythonast.parser.Python3Parser;
-import org.antlr.v4.runtime.ANTLRInputStream;
-import org.antlr.v4.runtime.CommonTokenStream;
+
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import Program.*;
+
+import program.*;
 
 /** Class PythonLoader
  * Role: one implementation of loader for python language
@@ -29,7 +26,7 @@ public class PythonLoader implements Loader{
         URL = url;
     }
 
-    /** Return the url of this load is using
+    /** Return the url of this load
      */
     @Override
     public String getURL() {
@@ -38,11 +35,11 @@ public class PythonLoader implements Loader{
 
 
 
-    /** build a program data structure defined in package program based on python program
+    /** Build a program data structure defined in package program based on python program
      */
     public Program Parse() throws IOException{
         ParserFacade parserFacade = new ParserFacade();
-        Program program = new PythonProgram(URL);
+        Program program = pfactory.makePythonProgram(URL);
 
         File directory = new File(URL);
         //get all the files from a directory
@@ -65,9 +62,40 @@ public class PythonLoader implements Loader{
         return  program;
     }
 
-    private void setIgnoringWrappers(boolean ignoringWrappers) {
-        this.ignoringWrappers = ignoringWrappers;
+    /** second type to build AST, in this way, each project will become one huge AST
+     */
+    @Override
+    public Program Parse2() throws IOException{
+        ParserFacade parserFacade = new ParserFacade();
+        Program program = pfactory.makePythonProgram(URL);
+
+        File directory = new File(URL);
+        //get all the files from a directory
+        File[] fList = directory.listFiles();
+        for (File file : fList){
+            if (file.isFile()){
+                String path = URL + "/" +file.getName();
+
+                RuleContext ctx = parserFacade.parse(new File(path));
+                build(ctx,program,file.getName());
+            }
+        }
+        PythonNode node = pfactory.makePythonNode("program");
+        Program program2 = pfactory.makePythonProgram(URL);
+        SearchTree newTree = pfactory.makePythonTree(node,URL);
+        for(Tree t : program.getAllTrees()){
+            newTree.getRoot().addChild(t.getRoot());
+        }
+
+        program2.getAllTrees().add(newTree);
+
+        return  program2;
     }
+
+//    Used in printAST
+//    private void setIgnoringWrappers(boolean ignoringWrappers) {
+//        this.ignoringWrappers = ignoringWrappers;
+//    }
 
     private Program build(RuleContext ctx, Program program, String fileName){
         buildProgram(ctx, null, program, fileName);
@@ -97,7 +125,7 @@ public class PythonLoader implements Loader{
                 NodeAdapter adapter = new ANTLRNodeAdapter((ParserRuleContext) ctx);
                 PythonNode node = pfactory.makePythonNode(adapter);
                 String fileURL = URL + "/" + fileName;
-                PythonTree tree = new PythonTree(node, fileName);
+                PythonTree tree = pfactory.makePythonTree(node, fileName);
 
                 program.addTree(tree);
                 currentroot = node;
@@ -112,7 +140,7 @@ public class PythonLoader implements Loader{
                     PythonNode node = pfactory.makePythonNode("main");
                     String fileURL = URL + "/" + fileName;
 
-                    PythonTree tree = new PythonTree(node, fileName);
+                    PythonTree tree = pfactory.makePythonTree(node, fileName);
                     program.addTree(tree);
                     currentroot = node;
                     program.setMain();
@@ -148,28 +176,26 @@ public class PythonLoader implements Loader{
     }
 
 
-    private void printAST(RuleContext ctx, int indentation) {
-        boolean toBeIgnored = ignoringWrappers
-                && ctx.getChildCount() == 1
-                && ctx.getChild(0) instanceof ParserRuleContext;
-
-        if (!toBeIgnored) {
-            String ruleName = Python3Parser.ruleNames[ctx.getRuleIndex()];
-            for (int i = 0; i < indentation; i++) {
-                System.out.print("  ");
-            }
-
-            System.out.println(ruleName);
-        }
-        for (int i=0;i<ctx.getChildCount();i++) {
-            ParseTree element = ctx.getChild(i);
-            if (element instanceof RuleContext) {
-                printAST((RuleContext)element, indentation + (toBeIgnored ? 0 : 1));
-            }
-        }
-
-    }
-
-
+//    private void printAST(RuleContext ctx, int indentation) {
+//        boolean toBeIgnored = ignoringWrappers
+//                && ctx.getChildCount() == 1
+//                && ctx.getChild(0) instanceof ParserRuleContext;
+//
+//        if (!toBeIgnored) {
+//            String ruleName = Python3Parser.ruleNames[ctx.getRuleIndex()];
+//            for (int i = 0; i < indentation; i++) {
+//                System.out.print("  ");
+//            }
+//
+//            System.out.println(ruleName);
+//        }
+//        for (int i=0;i<ctx.getChildCount();i++) {
+//            ParseTree element = ctx.getChild(i);
+//            if (element instanceof RuleContext) {
+//                printAST((RuleContext)element, indentation + (toBeIgnored ? 0 : 1));
+//            }
+//        }
+//
+//    }
 
 }

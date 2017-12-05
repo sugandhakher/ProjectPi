@@ -1,10 +1,10 @@
-package Analysis;
+package analysis;
 
-import Report.*;
-import Program.*;
-import static java.lang.Math.*;
+import report.*;
+import program.*;
+
 import java.util.ArrayList;
-/** TED Analysis
+/** TED analysis
  * use tree edit distance to check if two program has plagiarism
  * http://www.grantjenks.com/wiki/_media/ideas:simple_fast_algorithms_for_the_editing_distance_between_tree_and_related_problems.pdf
  */
@@ -18,8 +18,9 @@ public class TEDAnalysis implements Analysis {
     int treeEditDistance;
     static int[][] TD;
     private Report report;
+
     /**
-     * constructor
+     * Constructor taking Origin program and Compare program as arguments
      */
     public TEDAnalysis(Program o, Program c){
         programOrigin = o;
@@ -30,24 +31,16 @@ public class TEDAnalysis implements Analysis {
         report.addStatistics("originFunNum", o.getAllTrees().size());
         report.addStatistics("compareFunNum", c.getAllTrees().size());
     }
+
     /**
      * return confidence of compare result
      */
     public int getConfidence() {
         return confidence;
     }
-    /**
-     * return tree edit distance, temparary public for test
-     */
-    public int getTreeEditDistance() {
-        return treeEditDistance;
-    }
-
 
     /**
-     * return tree edit distance of two input trees
-     * @param tree1: origin tree
-     * @param tree2: compare tree
+     * Algorithm that returns the tree edit distance between two AST trees
      */
     private int ZhangShasha(SearchTree tree1, SearchTree tree2) {
         tree1.index();
@@ -79,6 +72,9 @@ public class TEDAnalysis implements Analysis {
         return TD[l1.size()][l2.size()];
     }
 
+    /**
+     * Return distance between each nodes in the two comparison trees
+     */
     private int treedist(ArrayList<Integer> l1, ArrayList<Integer> l2, int i, int j, SearchTree tree1, SearchTree tree2) {
         int[][] forestdist = new int[i + 1][j + 1];
 
@@ -122,13 +118,17 @@ public class TEDAnalysis implements Analysis {
     }
 
 
-
-
+    /**
+     * Return the report of similarity between two trees
+     */
     @Override
     public Report getReport() {
         return report;
     }
 
+    /**
+     * Running analysis for comparison between trees and generating report
+     */
     @Override
     public void runAnalysis() {
         //SearchTree ptree1 =  programOrigin.getAllTrees().get(0);
@@ -147,11 +147,12 @@ public class TEDAnalysis implements Analysis {
                 if(compare){
                     int distance = ZhangShasha(tree1,tree2);
                     int aveSize = (size1 + size2)/2;
-                    double valve = 2.8;
+                    double valve = 2.5;
                     if(distance == 0 || (double)aveSize/(double)distance >valve){
                         Plagiarism p = new StandardPlagiarism();
                         p.addToOrigin(tree1.getURL(),tree1.getRoot().getStartline(),tree1.getRoot().getEndline());
                         p.addToCompare(tree2.getURL(),tree1.getRoot().getStartline(),tree2.getRoot().getEndline());
+                        p.setConfident(100-(distance*aveSize/10));
                         report.addPlagiarism(p);
                 }
 

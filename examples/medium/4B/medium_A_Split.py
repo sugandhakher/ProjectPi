@@ -12,14 +12,6 @@ _author_ = "Kavya Vasudevaraju"
 # 8. Raw html files with their URL for further processing
 
 
-import urllib.request
-import ssl
-from bs4 import BeautifulSoup
-from multiprocessing import Queue
-import time
-import copy
-import re
-
 #urlQueue = Queue()
 seed = "https://en.wikipedia.org/wiki/Software_development"
 #queue = [Queue()] * 5

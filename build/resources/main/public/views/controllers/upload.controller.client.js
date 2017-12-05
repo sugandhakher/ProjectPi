@@ -212,27 +212,5 @@
             alert("The upload has been canceled by the user or the browser dropped the connection.")
         }
 
-
-        // //declare controller
-        // var model = this;
-        // model.files1 = [];
-        //
-        // //declare functions
-        // model.uploadFile = uploadFile;
-        //
-        //
-        // //initial function
-        // function init() {
-        //
-        // }
-        // init();
-        //
-        // //functions
-        //
-        // function uploadFile(){
-        //     document.getElementById("upload").submit();
-        //
-        // }
-
     }
 })();

@@ -1,9 +1,14 @@
-package Analysis;
-import Program.*;
+package analysis;
+import program.*;
 
-/** analysis factory
+/** analysis factory that creates object for TEDAnalysis class
  */
 public class AnalysisFactory {
-    public TEDAnalysis makeTEDAnalysis(Program origin, Program compare)
-    {return new TEDAnalysis(origin, compare);}
+
+    /**
+     * Return object of TEDAnalysis given the two comparison programs
+     */
+    public TEDAnalysis makeTEDAnalysis(Program origin, Program compare) {
+        return new TEDAnalysis(origin, compare);
+    }
 }

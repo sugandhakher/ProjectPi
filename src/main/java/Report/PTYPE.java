@@ -1,4 +1,4 @@
-package Report;
+package report;
 
 /** enum PTYPE
  * Role: enum data structure

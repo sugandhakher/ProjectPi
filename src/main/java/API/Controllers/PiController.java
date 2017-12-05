@@ -1,37 +1,23 @@
-package API.Controllers;
+package api.Controllers;
 
-import API.Services.IOService;
-import Analysis.TEDAnalysis;
-import Loader.Loader;
-import Loader.PythonLoader;
-import Program.Program;
-import org.springframework.http.HttpRequest;
+import api.Services.IOService;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import Report.*;
+import report.*;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.xml.ws.RequestWrapper;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.*;
 
 /**
- * restfulAPI controller
+ * RestfulAPI controller
  * */
 @RestController
 public class PiController {
     /**
-     * file upload
+     * File upload
      * */
     @RequestMapping(value = "api/upload", method = RequestMethod.POST,produces = "application/json")
     @ResponseBody
@@ -74,14 +60,14 @@ public class PiController {
 
 
     /**
-     * analysis
+     * Analysis
      * */
     @RequestMapping(value = "api/analysis/{projectid1}/{projectid2}", method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<Report> runAnalysis(
             @PathVariable("projectid1") String projectId1,
-            @PathVariable("projectid2") String projectId2,
-            HttpServletResponse response) throws IOException {
+            @PathVariable("projectid2") String projectId2)
+             throws IOException {
         String directory = "uploads/python";
 
         String projectPath1 = directory + "/origin/" +  projectId1;

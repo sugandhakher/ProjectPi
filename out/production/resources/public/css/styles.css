@@ -2,7 +2,7 @@ body{
     background:url("http://orig12.deviantart.net/a72c/f/2014/120/8/c/abstract_geometric_low_poly___wallpaper_by_mcfrolic-d7gjq9d.jpg");
     background-position: 0px 0px;
     /*background-repeat:no-repeat;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .centerImg{
@@ -296,4 +296,30 @@ h1.kreep:hover {
 }
 /*END BOUNCER*/
 
->>>>>>> structure
+
+/*code compare panel*/
+
+.code-compare{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto ;
+    width: 800px;
+    height: 500px;
+}
+#originText{
+    left: 20%;
+
+    width: 350px;
+    height: 200px;
+    resize: none;
+}
+#compareText{
+    left: 20%;
+
+    width: 350px;
+    height: 200px;
+    resize: none;
+}
+#closeCompare{
+
+}

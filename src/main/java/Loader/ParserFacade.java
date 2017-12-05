@@ -1,4 +1,4 @@
-package Loader;
+package loader;
 
 import pythonast.parser.Python3Lexer;
 import pythonast.parser.Python3Parser;
@@ -12,11 +12,17 @@ import java.nio.file.Files;
 
 public class ParserFacade {
 
+    /**
+     * Returns the file as a string
+     */
     private static String readFile(File file, Charset encoding) throws IOException {
         byte[] encoded = Files.readAllBytes(file.toPath());
         return new String(encoded, encoding);
     }
 
+    /**
+     * Parse the given file
+     */
     public Python3Parser.File_inputContext parse(File file) throws IOException {
         String code = readFile(file, Charset.forName("UTF-8"));
         Python3Lexer lexer = new Python3Lexer(new ANTLRInputStream(code));

@@ -1,10 +1,10 @@
-package API.Services;
+package api.Services;
 
-import Analysis.AnalysisFactory;
-import Analysis.TEDAnalysis;
-import Loader.LoaderFactory;
-import Loader.PythonLoader;
-import Program.PythonProgramFactory;
+import analysis.AnalysisFactory;
+import analysis.TEDAnalysis;
+import loader.LoaderFactory;
+import loader.PythonLoader;
+import program.PythonProgramFactory;
 
 import org.springframework.web.multipart.MultipartFile;
 
@@ -12,11 +12,9 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import Report.*;
-import Program.*;
+import report.*;
+import program.*;
 
 
 public class IOService {

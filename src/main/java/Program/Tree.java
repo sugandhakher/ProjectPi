@@ -1,4 +1,4 @@
-package Program;
+package program;
 
 /** Interface Tree
  * Role: Component Interface
@@ -6,9 +6,12 @@ package Program;
  */
 
 public interface Tree {
-    /** getRoot
-     * get root node of this tree
+    /** Return root node of this tree
      */
     Node getRoot();
+
+    /**
+     * Return size of the tree
+     */
     int size();
 }

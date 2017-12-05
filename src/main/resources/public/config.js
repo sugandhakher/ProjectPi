@@ -3,8 +3,8 @@
         .module("ProjectPi")
         .config(configuration)
         .factory('sharedList', function() {
-        var filelist1 = [];
-        var filelist2 = [];
+        var filelist1;
+        var filelist2;
         return {
             addItemTo1: addItemToList1,
             addItemTo2: addItemToList2,

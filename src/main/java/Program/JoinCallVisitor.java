@@ -1,9 +1,17 @@
-package Program;
+package program;
 
 import java.util.List;
 
+/**
+ * Visitor class to handle the operation on all Programs subnodes
+ */
 public class JoinCallVisitor implements Visitor {
+
     private List<SearchTree> allFunctions;
+
+    /**
+     * Default constructor that takes Program as arguments whose nodes need to be visited
+     */
     public JoinCallVisitor(Program p){
         allFunctions = p.getAllTrees();
     }

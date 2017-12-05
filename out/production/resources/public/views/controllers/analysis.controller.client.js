@@ -10,13 +10,57 @@
         model.filename2 = $routeParams["filename2"];
         //declare functions
         model.runAnalysis = runAnalysis;
+        model.showcompare = showcompare;
+        model.closeCompare = closeCompare;
         model.back = back;
+
         model.message = "";
         model.analysisDone = false;
         model.originProject = sharedList.getList1();
         model.compareProject = sharedList.getList2();
-
+        model.display = false;
         //functions
+
+        function closeCompare() {
+            model.display = false;
+
+        }
+        function showcompare(nameorigin,namecompare){
+            model.display = true;
+            var reader = new FileReader();
+            reader.onload = function(){
+                var text = reader.result;
+                var node = document.getElementById('originText');
+                node.innerText = text;
+                console.log(reader.result.substring(0, 200));
+            };
+
+            var reader2 = new FileReader();
+            reader2.onload = function(){
+                var text = reader.result;
+                var node = document.getElementById('compareText');
+                node.innerText = text;
+                console.log(reader.result.substring(0, 200));
+            };
+
+            var originFileList = sharedList.getList1();
+            var compareFileList = sharedList.getList2();
+            for(i in originFileList){
+                if(originFileList[i].name == nameorigin)
+                    reader.readAsText(originFileList[i]);
+
+            }
+            for(i in compareFileList){
+                if(compareFileList[i].name == namecompare)
+                    reader2.readAsText(compareFileList[i]);
+
+            }
+
+
+
+
+        }
+
         function back() {
             window.location.href = "#!/upload";
         }

@@ -1,11 +1,12 @@
-package Program;
+package program;
 
-import java.io.IOException;
-import java.io.StreamTokenizer;
-import java.io.StringReader;
 import java.util.ArrayList;
 
 public class PythonTree implements SearchTree {
+
+    /**
+     * Variables:
+     */
     PythonNode root ;
     String URL;
     // function l() which gives the leftmost child
@@ -14,17 +15,26 @@ public class PythonTree implements SearchTree {
     ArrayList<Integer> keyroots = new ArrayList<Integer>();
     // list of the labels of the nodes used for node comparison
     ArrayList<String> labels = new ArrayList<String>();
-    @Override
-    public int getStartline() {
-        return startline;
-    }
-    @Override
-    public int getEndline() {
-        return endline;
-    }
+//    int startline;
+//    int endline;
 
-    int startline;
-    int endline;
+    /**
+     * Return start line of the program
+     */
+//    @Override
+//    public int getStartline() {
+//        return startline;
+//    }
+
+    /**
+     * Return last line of tree
+     */
+//    @Override
+//    public int getEndline() {
+//        return endline;
+//    }
+
+
 
     // the following constructor handles preorder notation. E.g., f(a b(c))
 //    public PythonTree(String s) throws IOException {
@@ -36,35 +46,57 @@ public class PythonTree implements SearchTree {
 //        }
 //    }
 
+    /**
+     * Constructor that takes PythonNode as root and url
+     */
     public PythonTree(PythonNode r, String url){
         root = r;
         URL = url;
     }
 
+    /**
+     * Returns list of leftmost node of the tree
+     */
     @Override
     public ArrayList<Integer> getLeftmost() {
         return l;
     }
 
+    /**
+     * Return URL provided for searching the tree
+     */
     @Override
     public String getURL() {
         return URL;
     }
 
+    /**
+     * Return list of keyroots in search tree
+     */
     @Override
     public ArrayList<Integer> getKeyroots() {
         return keyroots;
     }
+
+    /**
+     * Returns list of labels in search tree
+     */
     @Override
     public ArrayList<String> getLabels() {
         return labels;
     }
 
+    /**
+     * Return root of the Python Tree
+     */
     @Override
     public Node getRoot(){
         return root;
     }
 
+    /**
+     * Return size of the tree
+     */
     @Override
     public int size() {
         int size = 1;
@@ -72,6 +104,9 @@ public class PythonTree implements SearchTree {
         return size;
     }
 
+    /**
+     * Helper function of size() that returns size of tree given the node
+     */
     private int getSize(Node node, int size){
         size += node.getChildren().size();
         for(Node n : node.getChildren()){
@@ -94,12 +129,19 @@ public class PythonTree implements SearchTree {
 //        }
 //        return node;
 //    }
-@Override
+
+    /**
+     * Traverse the tree for nodes
+     */
+    @Override
     public void traverse() {
         // put together an ordered list of node labels of the tree
         traverse(root, labels);
     }
 
+    /**
+     * Helper function of traverse()
+     */
     private static ArrayList<String> traverse(Node node, ArrayList<String> labels) {
         for (int i = 0; i < node.getChildren().size(); i++) {
             labels = traverse(node.getChildren().get(i), labels);
@@ -107,12 +149,20 @@ public class PythonTree implements SearchTree {
         labels.add(node.getLabel());
         return labels;
     }
+
+
+    /**
+     * Searches for index in tree
+     */
     @Override
     public void index() {
         // index each node in the tree according to traversal method
         index(root, 0);
     }
 
+    /**
+     * Helper function of index()
+     */
     private static int index(Node node, int index) {
         for (int i = 0; i < node.getChildren().size(); i++) {
             index = index(node.getChildren().get(i), index);
@@ -121,6 +171,10 @@ public class PythonTree implements SearchTree {
         ((PythonNode) node).setIndex(index);
         return index;
     }
+
+    /**
+     * Left subtree of the tree
+     */
     @Override
     public void l() {
         // put together a function which gives l()
@@ -128,6 +182,9 @@ public class PythonTree implements SearchTree {
         l = l((PythonNode) root, new ArrayList<Integer>());
     }
 
+    /**
+     * Helper function of l()
+     */
     private ArrayList<Integer> l(PythonNode node, ArrayList<Integer> l) {
         for (int i = 0; i < node.getChildren().size(); i++) {
             l = l((PythonNode) node.getChildren().get(i), l);
@@ -136,10 +193,16 @@ public class PythonTree implements SearchTree {
         return l;
     }
 
+    /**
+     * Returns the leftmost root of the tree
+     */
     private void leftmost() {
         leftmost(root);
     }
 
+    /**
+     * Helper function to search for leftmost root
+     */
     private static void leftmost(PythonNode node) {
         if (node == null)
             return;
@@ -156,6 +219,9 @@ public class PythonTree implements SearchTree {
 
     //LR_keyroots(T)= {klthere exists no k’> k such that/(k)= l(k’)}.
 
+    /**
+     * Searches the keyroots in the tree
+     */
     @Override
     public void keyroots() {
         // calculate the keyroots

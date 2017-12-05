@@ -1,6 +1,4 @@
-package Program;
-
-import java.util.List;
+package program;
 
 public interface Visitor {
   //  void visit(Tree tree);

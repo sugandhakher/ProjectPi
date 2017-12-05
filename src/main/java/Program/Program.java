@@ -1,22 +1,27 @@
-package Program;
+package program;
 
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
-/** Interface Node
- * Role: component interface
+/** Interface Program
+ *  Role: component interface
  *  This component is our representation of a python program, we will use this data structure to run analysis.
  *  The advantage of this component is , we bond node to the position of itsself. so it will be easier for visualization
  */
 public interface Program{
-    /** return all node in a set of this program
+
+    /** Return list of all nodes in the program
      */
     List<SearchTree> getAllTrees();
 
+    /**
+     * Add given tree in list of tree
+     */
     void addTree(SearchTree t);
+
+    /**
+     * Return URL when provided
+     */
     String getURL();
 
     /** return a map, the key is all sub-route of input path, and value is a set of node in this sub-route
@@ -29,8 +34,19 @@ public interface Program{
      */
     //public Map<String, Set<Integer>> getNodeCoveredLine(Node node);
 
-    void printLabel();
+    /**
+     * Prints the label of the node
+     */
+//    void printLabel();
+
+    /**
+     * return true if main is present
+     */
     boolean hasMain();
+
+    /**
+     * Set main as true
+     */
     void setMain();
 
 }

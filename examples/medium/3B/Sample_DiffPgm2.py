@@ -1,6 +1,6 @@
 _author_ = "Kavya Vasudevaraju"
 
-# Program to find BM25
+# program to find BM25
 # Source: https://en.wikipedia.org/wiki/Okapi_BM25
 # Relevance information is not considered in the below program
 

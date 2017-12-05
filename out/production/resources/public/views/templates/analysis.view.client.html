@@ -1,6 +1,6 @@
 <div style="text-align:center;">
 <h1 class="kreep">
-    <button ng-show="model.analysisDone == false" ng-click="model.runAnalysis()" class="button button5"><b>Analysis</b></button>
+    <button ng-show="model.analysisDone == false" ng-click="model.runAnalysis()" class="button button5"><b>analysis</b></button>
 </h1>
     <h1 class="kreep">
         <button ng-show="model.analysisDone == true" ng-click="model.back()" class="button button5"><b>Back</b></button>
@@ -9,6 +9,7 @@
 <table class="table-fill">
     <div class="table-title">
         <h3>Compare Result</h3>
+        <h3>{{model.message}}</h3>
     </div>
     <thead>
     <tr>
@@ -16,10 +17,12 @@
         <th class="text-left">Involved Origin</th>
         <th class="text-left">Involved Compare</th>
         <th class="text-left">Confident</th>
+        <th class="text-left">Action</th>
     </tr>
     </thead>
     <tbody class="table-hover">
-    <tr id="{{$index}}" ng-repeat = "plagiarism in model.report.allPlagiarism">
+    <tr id="{{$index}}"
+        ng-repeat = "plagiarism in model.report.allPlagiarism">
         <td class="text-left">{{$index + 1}}</td>
         <td class="text-left">
             <table >
@@ -27,6 +30,7 @@
                     <th class="text-left">Involved file</th>
                     <th class="text-left">Start line</th>
                     <th class="text-left">End line</th>
+
                 </tr>
                 <tr ng-switch="plagiarism.originEndline">
                     <td>
@@ -74,7 +78,17 @@
             </table>
         </td>
         <td class="text-left">{{plagiarism.confident}}</td>
+        <td>
+            <button ng-click = "model.showcompare(plagiarism.originPath,plagiarism.comparePath)">Details </button>
+        </td>
     </tr>
     </tbody>
 </table>
+
+<div ng-show = "model.display == true"
+class = "code-compare">
+    <textarea id="originText" readonly></textarea>
+    <textarea id="compareText" readonly></textarea>
+    <button id="closeCompare" class="btn btn-danger btn-block" ng-click = "model.closeCompare()"> close </button>
+</div>
 
