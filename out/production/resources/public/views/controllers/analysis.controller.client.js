@@ -37,10 +37,10 @@
 
             var reader2 = new FileReader();
             reader2.onload = function(){
-                var text = reader.result;
+                var text = reader2.result;
                 var node = document.getElementById('compareText');
                 node.innerText = text;
-                console.log(reader.result.substring(0, 200));
+                console.log(reader2.result.substring(0, 200));
             };
 
             var originFileList = sharedList.getList1();
@@ -72,6 +72,7 @@
                     if(model.report.allStatistics.pNum == 0){
                         model.messsage = "No Plagiarism Found"
                         model.analysisDone = true;
+
                     }
                     else{
                         model.message = "Plagiarism Found"

@@ -17,7 +17,7 @@ public class StandardReport implements Report {
     /**
      * Default constructor
      */
-    public StandardReport(){
+    public StandardReport() {
         plagiarismSet = new HashSet<Plagiarism>();
         statistics = new HashMap<>();
         statistics.put("pNum", 0);
@@ -63,7 +63,7 @@ public class StandardReport implements Report {
      * Confirm if programs are plagiarized
      */
     @Override
-    public boolean hasPlagiarism(){
+    public boolean hasPlagiarism() {
         return !plagiarismSet.isEmpty();
     }
 }

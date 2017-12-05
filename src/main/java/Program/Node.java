@@ -2,21 +2,25 @@ package program;
 
 import java.util.List;
 
-/** Interface Node
+/**
+ * Interface Node
  * Role: Component Interface
  * Node is the basic unit of AST
  */
 public interface Node {
 
-    /** Returns list of all nodes in tree
+    /**
+     * Returns list of all nodes in tree
      */
     List<Node> getChildren();
 
-    /** Add one node to be the child of the node
+    /**
+     * Add one node to be the child of the node
      */
     void addChild(Node n);
 
-    /** Return label of the node
+    /**
+     * Return label of the node
      */
     String getLabel();
 

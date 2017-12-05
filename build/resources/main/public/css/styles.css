@@ -303,20 +303,20 @@ h1.kreep:hover {
     text-align:center;
     margin-left: auto;
     margin-right: auto ;
-    width: 800px;
+    width: 850px;
     height: 500px;
 }
 #originText{
     left: 20%;
 
-    width: 350px;
+    width: 400px;
     height: 200px;
     resize: none;
 }
 #compareText{
     left: 20%;
 
-    width: 350px;
+    width: 400px;
     height: 200px;
     resize: none;
 }

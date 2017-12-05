@@ -7,7 +7,7 @@ public class PythonTree implements SearchTree {
     /**
      * Variables:
      */
-    PythonNode root ;
+    PythonNode root;
     String URL;
     // function l() which gives the leftmost child
     ArrayList<Integer> l = new ArrayList<Integer>();
@@ -15,41 +15,12 @@ public class PythonTree implements SearchTree {
     ArrayList<Integer> keyroots = new ArrayList<Integer>();
     // list of the labels of the nodes used for node comparison
     ArrayList<String> labels = new ArrayList<String>();
-//    int startline;
-//    int endline;
 
-    /**
-     * Return start line of the program
-     */
-//    @Override
-//    public int getStartline() {
-//        return startline;
-//    }
-
-    /**
-     * Return last line of tree
-     */
-//    @Override
-//    public int getEndline() {
-//        return endline;
-//    }
-
-
-
-    // the following constructor handles preorder notation. E.g., f(a b(c))
-//    public PythonTree(String s) throws IOException {
-//        StreamTokenizer tokenizer = new StreamTokenizer(new StringReader(s));
-//        tokenizer.nextToken();
-//        root = parseString(root, tokenizer);
-//        if (tokenizer.ttype != StreamTokenizer.TT_EOF) {
-//            throw new RuntimeException("Leftover token: " + tokenizer.ttype);
-//        }
-//    }
 
     /**
      * Constructor that takes PythonNode as root and url
      */
-    public PythonTree(PythonNode r, String url){
+    public PythonTree(PythonNode r, String url) {
         root = r;
         URL = url;
     }
@@ -90,7 +61,7 @@ public class PythonTree implements SearchTree {
      * Return root of the Python Tree
      */
     @Override
-    public Node getRoot(){
+    public Node getRoot() {
         return root;
     }
 
@@ -107,28 +78,14 @@ public class PythonTree implements SearchTree {
     /**
      * Helper function of size() that returns size of tree given the node
      */
-    private int getSize(Node node, int size){
+    private int getSize(Node node, int size) {
         size += node.getChildren().size();
-        for(Node n : node.getChildren()){
-            size = getSize(n,size);
+        for (Node n : node.getChildren()) {
+            size = getSize(n, size);
         }
         return size;
 
     }
-
-
-    //    private static PythonNode parseString(PythonNode node, StreamTokenizer tokenizer) throws IOException {
-//        node.setLabel(tokenizer.sval);
-//        tokenizer.nextToken();
-//        if (tokenizer.ttype == '(') {
-//            tokenizer.nextToken();
-//            do {
-//                node.getChildren().add(parseString(new PythonNode(), tokenizer));
-//            } while (tokenizer.ttype != ')');
-//            tokenizer.nextToken();
-//        }
-//        return node;
-//    }
 
     /**
      * Traverse the tree for nodes
@@ -149,7 +106,6 @@ public class PythonTree implements SearchTree {
         labels.add(node.getLabel());
         return labels;
     }
-
 
     /**
      * Searches for index in tree
@@ -204,15 +160,16 @@ public class PythonTree implements SearchTree {
      * Helper function to search for leftmost root
      */
     private static void leftmost(PythonNode node) {
-        if (node == null)
-            return;
+        //controled in loader
+//        if (node == null)
+//            return;
         for (int i = 0; i < node.getChildren().size(); i++) {
             leftmost((PythonNode) node.getChildren().get(i));
         }
         if (node.getChildren().size() == 0) {
             node.leftmost = node;
         } else {
-            PythonNode tempnode =  (PythonNode) node.children.get(0);
+            PythonNode tempnode = (PythonNode) node.children.get(0);
             node.leftmost = tempnode.getLeftmost();
         }
     }
@@ -237,6 +194,4 @@ public class PythonTree implements SearchTree {
             }
         }
     }
-
-
 }

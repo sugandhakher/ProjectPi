@@ -16,10 +16,10 @@ public interface Loader {
      */
     public String getURL();
 
-    /** build a program data structure defined in package program for a program
-     * @param url: the url for a python project
+    /** build a program data structure type1 defined in package program for a program
      */
-    public Program Parse() throws IOException;
-
-    public Program Parse2() throws IOException;
+    public Program parse() throws IOException;
+    /** build a program data structure type 2 defined in package program for a program
+     */
+    public Program parse2() throws IOException;
 }

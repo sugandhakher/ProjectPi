@@ -1,7 +1,9 @@
 package analysis;
+
 import program.*;
 
-/** analysis factory that creates object for TEDAnalysis class
+/**
+ * analysis factory that creates object for TEDAnalysis class
  */
 public class AnalysisFactory {
 

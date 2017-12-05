@@ -1,6 +1,7 @@
 package report;
 
-/** enum PTYPE
+/**
+ * enum PTYPE
  * Role: enum data structure
  * This is a enum data structure that we uee to indicates all types of plagiarism
  */

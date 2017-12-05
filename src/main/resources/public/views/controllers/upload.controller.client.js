@@ -70,7 +70,7 @@
                 $scope.$apply(function(){
                     $scope.files1 = []
                     for (var i = 0; i < files.length; i++) {
-                        if(files[i].name.split('.').pop() == ".py"){
+                        if(files[i].name.split('.').pop() == "py"){
                             $scope.files1.push(files[i]);
                         }
                         else {
@@ -78,7 +78,7 @@
                         }
 
                     }
-                    if(allValidMark == true){
+                    if(allValidMark == false){
                         alert("your non python file has been ignored")
                     }
                 })
@@ -95,13 +95,24 @@
             })
             var files = evt.dataTransfer.files
             if (files.length > 0) {
+                var allValidMark = true;
                 $scope.$apply(function(){
                     $scope.files2 = []
                     for (var i = 0; i < files.length; i++) {
-                        $scope.files2.push(files[i])
+                        if(files[i].name.split('.').pop() == "py"){
+                            $scope.files2.push(files[i]);
+                        }
+                        else {
+                            allValidMark = false;
+                        }
+
+                    }
+                    if(allValidMark == false){
+                        alert("your non python file has been ignored")
                     }
                 })
             }
+
         }, false)
 
 

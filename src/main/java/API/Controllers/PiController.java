@@ -13,21 +13,19 @@ import java.util.*;
 
 /**
  * RestfulAPI controller
- * */
+ */
 @RestController
 public class PiController {
     /**
      * File upload
-     * */
-    @RequestMapping(value = "api/upload", method = RequestMethod.POST,produces = "application/json")
+     */
+    @RequestMapping(value = "api/upload", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
-    public ResponseEntity<Map<String,String>> uploadFile(
-            @RequestParam("uploadfile") MultipartFile [] uploadfile,
-            @RequestParam("uploadfile2") MultipartFile [] uploadfile2,
-            //@RequestBody MultiValueMap<String, File> requestBody,
-            //HttpServletRequest request,
+    public ResponseEntity<Map<String, String>> uploadFile(
+            @RequestParam("uploadfile") MultipartFile[] uploadfile,
+            @RequestParam("uploadfile2") MultipartFile[] uploadfile2,
             HttpServletResponse response) throws IOException {
-        Map<String,String> m = new HashMap<String,String>();
+        Map<String, String> m = new HashMap<String, String>();
         try {
 //             Get the filename and build the local file path (be sure that the
 //             application have write permissions on such directory)
@@ -41,17 +39,16 @@ public class PiController {
                     + ID2;
 
 
-            IOService.writeFiles(uploadfile, directoryOrigin );
-            IOService.writeFiles(uploadfile2, directoryCompare );
+            IOService.writeFiles(uploadfile, directoryOrigin);
+            IOService.writeFiles(uploadfile2, directoryCompare);
 
             //String redirectURL = "/#!/analysis/" + ID1 + "/" + ID2;
-            m.put("id1",ID1);
-            m.put("id2",ID2);
-            return new ResponseEntity<Map<String,String>>(m, HttpStatus.OK);
-        }
-        catch (Exception e) {
+            m.put("id1", ID1);
+            m.put("id2", ID2);
+            return new ResponseEntity<Map<String, String>>(m, HttpStatus.OK);
+        } catch (Exception e) {
             System.out.println(e.getMessage());
-            return new ResponseEntity<Map<String,String>>(m, HttpStatus.NO_CONTENT);
+            return new ResponseEntity<Map<String, String>>(m, HttpStatus.NO_CONTENT);
             //response.sendRedirect("/#!/error");
         }
 
@@ -61,22 +58,20 @@ public class PiController {
 
     /**
      * Analysis
-     * */
+     */
     @RequestMapping(value = "api/analysis/{projectid1}/{projectid2}", method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<Report> runAnalysis(
             @PathVariable("projectid1") String projectId1,
             @PathVariable("projectid2") String projectId2)
-             throws IOException {
+            throws IOException {
         String directory = "uploads/python";
 
-        String projectPath1 = directory + "/origin/" +  projectId1;
-        String projectPath2 = directory + "/compare/" +  projectId2;
+        String projectPath1 = directory + "/origin/" + projectId1;
+        String projectPath2 = directory + "/compare/" + projectId2;
 
-        Report report = IOService.analysis(projectPath1,projectPath2);
+        Report report = IOService.analysis(projectPath1, projectPath2);
         return new ResponseEntity<Report>(report, HttpStatus.OK);
-
-
     }
 
 }

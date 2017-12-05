@@ -3,14 +3,16 @@ package program;
 
 import java.util.List;
 
-/** Interface Program
- *  Role: component interface
- *  This component is our representation of a python program, we will use this data structure to run analysis.
- *  The advantage of this component is , we bond node to the position of itsself. so it will be easier for visualization
+/**
+ * Interface Program
+ * Role: component interface
+ * This component is our representation of a python program, we will use this data structure to run analysis.
+ * The advantage of this component is , we bond node to the position of itsself. so it will be easier for visualization
  */
-public interface Program{
+public interface Program {
 
-    /** Return list of all nodes in the program
+    /**
+     * Return list of all nodes in the program
      */
     List<SearchTree> getAllTrees();
 

@@ -2,11 +2,13 @@ package report;
 
 import java.util.Set;
 import java.util.Map;
-/** Interface report
+
+/**
+ * Interface report
  * Role: component interface
- *  This component is the result of an analysis, it record all plagiarism we found in two programs
+ * This component is the result of an analysis, it record all plagiarism we found in two programs
  */
-public interface Report{
+public interface Report {
 
     /**
      * Retrun Plagiarized set of nodes
@@ -24,7 +26,7 @@ public interface Report{
     /** generate a pdf in given location
      * @param : path , the path you would like to save pdf file
      */
- //   public void generatePDF(String path);
+    //   public void generatePDF(String path);
 
     /**
      * Detects the plagiarized statistics

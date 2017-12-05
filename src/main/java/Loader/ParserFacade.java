@@ -21,7 +21,7 @@ public class ParserFacade {
     }
 
     /**
-     * Parse the given file
+     * parse the given file
      */
     public Python3Parser.File_inputContext parse(File file) throws IOException {
         String code = readFile(file, Charset.forName("UTF-8"));

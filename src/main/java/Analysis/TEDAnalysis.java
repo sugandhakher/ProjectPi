@@ -4,7 +4,9 @@ import report.*;
 import program.*;
 
 import java.util.ArrayList;
-/** TED analysis
+
+/**
+ * TED analysis
  * use tree edit distance to check if two program has plagiarism
  * http://www.grantjenks.com/wiki/_media/ideas:simple_fast_algorithms_for_the_editing_distance_between_tree_and_related_problems.pdf
  */
@@ -22,7 +24,7 @@ public class TEDAnalysis implements Analysis {
     /**
      * Constructor taking Origin program and Compare program as arguments
      */
-    public TEDAnalysis(Program o, Program c){
+    public TEDAnalysis(Program o, Program c) {
         programOrigin = o;
         programCompare = c;
         confidence = 0;
@@ -42,7 +44,7 @@ public class TEDAnalysis implements Analysis {
     /**
      * Algorithm that returns the tree edit distance between two AST trees
      */
-    private int ZhangShasha(SearchTree tree1, SearchTree tree2) {
+    private int zhangShasha(SearchTree tree1, SearchTree tree2) {
         tree1.index();
         tree1.l();
         tree1.keyroots();
@@ -131,30 +133,28 @@ public class TEDAnalysis implements Analysis {
      */
     @Override
     public void runAnalysis() {
-        //SearchTree ptree1 =  programOrigin.getAllTrees().get(0);
-        //SearchTree ptree2 =  programCompare.getAllTrees().get(0);
-        for(SearchTree tree1 :  programOrigin.getAllTrees()){
-            for(SearchTree tree2 : programCompare.getAllTrees()){
+        for (SearchTree tree1 : programOrigin.getAllTrees()) {
+            for (SearchTree tree2 : programCompare.getAllTrees()) {
                 int size1 = tree1.size();
                 int size2 = tree2.size();
                 int sizeDiff = Math.abs(size1 - size2);
                 boolean compare = true;
-                if(tree1.getRoot().getLabel().equals("main") && size1 > 400)
+                if (tree1.getRoot().getLabel().equals("main") && size1 > 400)
                     compare = false;
-                if(tree2.getRoot().getLabel().equals("main") && size2 > 400)
+                if (tree2.getRoot().getLabel().equals("main") && size2 > 400)
                     compare = false;
 
-                if(compare){
-                    int distance = ZhangShasha(tree1,tree2);
-                    int aveSize = (size1 + size2)/2;
+                if (compare) {
+                    int distance = zhangShasha(tree1, tree2);
+                    int aveSize = (size1 + size2) / 2;
                     double valve = 2.5;
-                    if(distance == 0 || (double)aveSize/(double)distance >valve){
+                    if (distance == 0 || (double) aveSize / (double) distance > valve) {
                         Plagiarism p = new StandardPlagiarism();
-                        p.addToOrigin(tree1.getURL(),tree1.getRoot().getStartline(),tree1.getRoot().getEndline());
-                        p.addToCompare(tree2.getURL(),tree1.getRoot().getStartline(),tree2.getRoot().getEndline());
-                        p.setConfident(100-(distance*aveSize/10));
+                        p.addToOrigin(tree1.getURL(), tree1.getRoot().getStartline(), tree1.getRoot().getEndline());
+                        p.addToCompare(tree2.getURL(), tree1.getRoot().getStartline(), tree2.getRoot().getEndline());
+                        p.setConfident(100 - (distance * aveSize / 10));
                         report.addPlagiarism(p);
-                }
+                    }
 
                 }
             }

@@ -1,6 +1,6 @@
 package report;
 
-public class StandardPlagiarism implements Plagiarism{
+public class StandardPlagiarism implements Plagiarism {
 
     /**
      * Variables:
@@ -11,7 +11,7 @@ public class StandardPlagiarism implements Plagiarism{
     private int originEndline;
     private int compareEndline;
     private int compareStartline;
-    private  int confident;
+    private int confident;
 
     /**
      * Return the path of original file to compare
@@ -56,7 +56,7 @@ public class StandardPlagiarism implements Plagiarism{
     /**
      * Return the end line of the Comparison Program
      */
-   @Override
+    @Override
     public int getCompareEndline() {
         return compareEndline;
     }
@@ -78,7 +78,6 @@ public class StandardPlagiarism implements Plagiarism{
     }
 
 
-
 //    public StandardPlagiarism(){
 //        originCodeMap = new HashMap<String, Integer[]>();
 //        compareCodeMap = new HashMap<String, Integer[]>();
@@ -91,10 +90,9 @@ public class StandardPlagiarism implements Plagiarism{
      */
     @Override
     public void addToOrigin(String path, int startline, int endline) {
-       originPath = path;
-       originStartline = startline;
-       originEndline = endline;
-
+        originPath = path;
+        originStartline = startline;
+        originEndline = endline;
     }
 
     /**
@@ -105,7 +103,6 @@ public class StandardPlagiarism implements Plagiarism{
         comparePath = path;
         compareStartline = startline;
         compareEndline = endline;
-
     }
 
 

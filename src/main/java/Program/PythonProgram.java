@@ -3,7 +3,7 @@ package program;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PythonProgram implements Program{
+public class PythonProgram implements Program {
     /**
      * Variables:
      */
@@ -22,19 +22,20 @@ public class PythonProgram implements Program{
     /**
      * Default Constructor
      */
-    public PythonProgram(){
-        trees = new ArrayList<SearchTree>();
-    }
+//    public PythonProgram() {
+//        trees = new ArrayList<SearchTree>();
+//    }
 
     /**
      * Constructor that takes given URL and assign it to url attribute
      */
-    public PythonProgram(String url){
+    public PythonProgram(String url) {
         trees = new ArrayList<SearchTree>();
         URL = url;
     }
 
-    /** Return list of all nodes in the program
+    /**
+     * Return list of all nodes in the program
      */
     @Override
     public List<SearchTree> getAllTrees() {

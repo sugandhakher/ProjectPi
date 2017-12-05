@@ -46,16 +46,4 @@ public interface SearchTree extends Tree {
      * Return URL provided for searching the tree
      */
     String getURL();
-
-    /**
-     * Return start line of the program
-     */
-//    int getStartline();
-
-    /**
-     * Return last line of tree
-     */
-//    int getEndline();
-
-
 }

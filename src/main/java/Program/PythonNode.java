@@ -45,21 +45,24 @@ public class PythonNode implements Node {
         endline = 0;
     }
 
-    /** Returns list of all nodes in tree
+    /**
+     * Returns list of all nodes in tree
      */
     @Override
     public List<Node> getChildren() {
         return children;
     }
 
-    /** Add one node to be the child of the node
+    /**
+     * Add one node to be the child of the node
      */
     @Override
-    public void addChild(Node n){
+    public void addChild(Node n) {
         children.add(n);
     }
 
-    /** Return label of the node
+    /**
+     * Return label of the node
      */
     @Override
     public String getLabel() {
@@ -112,7 +115,7 @@ public class PythonNode implements Node {
     @Override
     public void accept(Visitor v) {
         v.visit(this);
-        for (Node n :this.getChildren()){
+        for (Node n : this.getChildren()) {
             n.accept(v);
         }
     }
@@ -120,21 +123,21 @@ public class PythonNode implements Node {
     /**
      * Return index of the Node
      */
-    public int getIndex(){
+    public int getIndex() {
         return index;
     }
 
     /**
      * Sets index of node as given in argument
      */
-    public void setIndex(int i){
+    public void setIndex(int i) {
         index = i;
     }
 
     /**
      * Returns leftmose node in PythonNode
      */
-    public PythonNode getLeftmost(){
-       return leftmost;
+    public PythonNode getLeftmost() {
+        return leftmost;
     }
 }

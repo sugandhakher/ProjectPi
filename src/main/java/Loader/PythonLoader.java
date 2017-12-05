@@ -12,21 +12,24 @@ import java.io.IOException;
 
 import program.*;
 
-/** Class PythonLoader
+/**
+ * Class PythonLoader
  * Role: one implementation of loader for python language
  */
-public class PythonLoader implements Loader{
-    /** URL of project
+public class PythonLoader implements Loader {
+    /**
+     * URL of project
      */
     private String URL;
     private PythonProgramFactory pfactory = new PythonProgramFactory();
     private boolean ignoringWrappers = true;
 
-    public PythonLoader(String url){
+    public PythonLoader(String url) {
         URL = url;
     }
 
-    /** Return the url of this load
+    /**
+     * Return the url of this load
      */
     @Override
     public String getURL() {
@@ -34,62 +37,57 @@ public class PythonLoader implements Loader{
     }
 
 
-
-    /** Build a program data structure defined in package program based on python program
+    /**
+     * Build a program data structure defined in package program based on python program
      */
-    public Program Parse() throws IOException{
+    public Program parse() throws IOException {
         ParserFacade parserFacade = new ParserFacade();
         Program program = pfactory.makePythonProgram(URL);
 
         File directory = new File(URL);
         //get all the files from a directory
         File[] fList = directory.listFiles();
-        for (File file : fList){
-            if (file.isFile()){
-                String path = URL + "/" +file.getName();
+        for (File file : fList) {
+            if (file.isFile()) {
+                String path = URL + "/" + file.getName();
 
                 RuleContext ctx = parserFacade.parse(new File(path));
-                build(ctx,program,file.getName());
+                build(ctx, program, file.getName());
             }
         }
-
-        //print ast
-      // printAST(ctx,0);
-
- //      p.printLabel();
-        program =  jointCalls(program);
-      // p.printLabel();
-        return  program;
+        program = jointCalls(program);
+        return program;
     }
 
-    /** second type to build AST, in this way, each project will become one huge AST
+    /**
+     * second type to build AST, in this way, each project will become one huge AST
      */
     @Override
-    public Program Parse2() throws IOException{
+    public Program parse2() throws IOException {
         ParserFacade parserFacade = new ParserFacade();
         Program program = pfactory.makePythonProgram(URL);
 
         File directory = new File(URL);
         //get all the files from a directory
         File[] fList = directory.listFiles();
-        for (File file : fList){
-            if (file.isFile()){
-                String path = URL + "/" +file.getName();
+        for (File file : fList) {
+            if (file.isFile()) {
+                String path = URL + "/" + file.getName();
 
                 RuleContext ctx = parserFacade.parse(new File(path));
-                build(ctx,program,file.getName());
+                build(ctx, program, file.getName());
             }
         }
         PythonNode node = pfactory.makePythonNode("program");
         Program program2 = pfactory.makePythonProgram(URL);
-        SearchTree newTree = pfactory.makePythonTree(node,URL);
-        for(Tree t : program.getAllTrees()){
+        SearchTree newTree = pfactory.makePythonTree(node, URL);
+        for (Tree t : program.getAllTrees()) {
             newTree.getRoot().addChild(t.getRoot());
         }
 
         program2.getAllTrees().add(newTree);
 
-        return  program2;
+        return program2;
     }
 
 //    Used in printAST
@@ -97,15 +95,15 @@ public class PythonLoader implements Loader{
 //        this.ignoringWrappers = ignoringWrappers;
 //    }
 
-    private Program build(RuleContext ctx, Program program, String fileName){
+    private Program build(RuleContext ctx, Program program, String fileName) {
         buildProgram(ctx, null, program, fileName);
-        return  program;
+        return program;
 
     }
 
-    private Program jointCalls(Program program){
+    private Program jointCalls(Program program) {
         Visitor visitor = new JoinCallVisitor(program);
-        for(SearchTree tree : program.getAllTrees()){
+        for (SearchTree tree : program.getAllTrees()) {
             tree.getRoot().accept(visitor);
         }
         return program;
@@ -113,15 +111,15 @@ public class PythonLoader implements Loader{
 
 
     private void buildProgram(RuleContext ctx, Node currentroot, Program program, String fileName) {
- //       printAST(ctx,0);
+        //       printAST(ctx,0);
         //set ignored node
         boolean toBeIgnored = ignoringWrappers
                 && ctx.getChildCount() == 1
                 && ctx.getChild(0) instanceof ParserRuleContext;
         String ruleName = Python3Parser.ruleNames[ctx.getRuleIndex()];
-        if (!toBeIgnored && ruleName!="file_input") {
+        if (!toBeIgnored && ruleName != "file_input") {
 
-            if(ruleName == "funcdef"){
+            if (ruleName == "funcdef") {
                 NodeAdapter adapter = new ANTLRNodeAdapter((ParserRuleContext) ctx);
                 PythonNode node = pfactory.makePythonNode(adapter);
                 String fileURL = URL + "/" + fileName;
@@ -129,14 +127,13 @@ public class PythonLoader implements Loader{
 
                 program.addTree(tree);
                 currentroot = node;
-            }
-            else if(currentroot != null){
+            } else if (currentroot != null) {
                 NodeAdapter adapter = new ANTLRNodeAdapter((ParserRuleContext) ctx);
                 PythonNode newNode = pfactory.makePythonNode(adapter);
                 currentroot.addChild(newNode);
                 currentroot = newNode;
-            }else{
-                if(!program.hasMain()){
+            } else {
+                if (!program.hasMain()) {
                     PythonNode node = pfactory.makePythonNode("main");
                     String fileURL = URL + "/" + fileName;
 
@@ -148,10 +145,9 @@ public class PythonLoader implements Loader{
                     PythonNode newNode = pfactory.makePythonNode(adapter);
                     currentroot.addChild(newNode);
                     currentroot = newNode;
-                }else{
-                    for(SearchTree tree : program.getAllTrees()){
-                        if(tree.getRoot().getLabel().equals("main"))
-                        {
+                } else {
+                    for (SearchTree tree : program.getAllTrees()) {
+                        if (tree.getRoot().getLabel().equals("main")) {
                             currentroot = tree.getRoot();
                             NodeAdapter adapter = new ANTLRNodeAdapter((ParserRuleContext) ctx);
                             PythonNode newNode = pfactory.makePythonNode(adapter);
@@ -165,10 +161,10 @@ public class PythonLoader implements Loader{
             }
 
         }
-        for (int i=0;i<ctx.getChildCount();i++) {
+        for (int i = 0; i < ctx.getChildCount(); i++) {
             ParseTree element = ctx.getChild(i);
             if (element instanceof RuleContext) {
-                buildProgram((RuleContext)element, currentroot, program,fileName);
+                buildProgram((RuleContext) element, currentroot, program, fileName);
 
             }
         }
