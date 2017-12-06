@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="blackBoxTests.SampleBBTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-12-05T23:28:07" hostname="Sugandhas-MacBook-Air.local" time="3.61">
+<testsuite name="blackBoxTests.SampleBBTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-12-06T00:09:55" hostname="Sugandhas-MacBook-Air.local" time="4.632">
   <properties/>
-  <testcase name="sampleSet2Set4Test" classname="blackBoxTests.SampleBBTest" time="0.969"/>
-  <testcase name="sampleSet1Test" classname="blackBoxTests.SampleBBTest" time="0.512"/>
-  <testcase name="sampleSet2Test" classname="blackBoxTests.SampleBBTest" time="0.839"/>
-  <testcase name="sampleSet3Test" classname="blackBoxTests.SampleBBTest" time="0.031"/>
-  <testcase name="sampleSet4Test" classname="blackBoxTests.SampleBBTest" time="0.675"/>
-  <testcase name="sampleSet5Test" classname="blackBoxTests.SampleBBTest" time="0.582"/>
+  <testcase name="sampleSet2Set4Test" classname="blackBoxTests.SampleBBTest" time="1.339"/>
+  <testcase name="sampleSet1Test" classname="blackBoxTests.SampleBBTest" time="0.648"/>
+  <testcase name="sampleSet2Test" classname="blackBoxTests.SampleBBTest" time="1.327"/>
+  <testcase name="sampleSet3Test" classname="blackBoxTests.SampleBBTest" time="0.041"/>
+  <testcase name="sampleSet4Test" classname="blackBoxTests.SampleBBTest" time="0.715"/>
+  <testcase name="sampleSet5Test" classname="blackBoxTests.SampleBBTest" time="0.56"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[line 7:30 no viable alternative at input '<EOF>'
 line 53:19 no viable alternative at input '<EOF>'
