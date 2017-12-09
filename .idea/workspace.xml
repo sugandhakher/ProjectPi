@@ -2,190 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e392abe-1dac-4164-9d93-9fa118e7b78d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/ProjectPi.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/ProjectPi_main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/ProjectPi_test.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/11.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/11_main.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/11_test.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/11-all-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/11-all-1.0-SNAPSHOT.jar.original" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/public/views/templates/error.view.client.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/analysis/Analysis.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/analysis/AnalysisFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/analysis/TEDAnalysis.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/api/Controllers/PiController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/api/PiApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/api/Services/IOService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/loader/ANTLRNodeAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/loader/Loader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/loader/LoaderFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/loader/NodeAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/loader/ParserFacade.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/loader/PythonLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/JoinCallVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/PythonNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/PythonProgram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/PythonProgramFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/PythonTree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/SearchTree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/Tree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/program/Visitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3BaseListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3BaseVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Lexer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Listener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$And_exprContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$And_testContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$ArglistContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$ArgumentContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Arith_exprContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Assert_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$AtomContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$AugassignContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Break_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$ClassdefContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Comp_forContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Comp_ifContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Comp_iterContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Comp_opContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$ComparisonContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Compound_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Continue_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$DecoratedContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$DecoratorContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$DecoratorsContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Del_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$DictorsetmakerContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Dotted_as_nameContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Dotted_as_namesContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Dotted_nameContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Eval_inputContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Except_clauseContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$ExprContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Expr_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$ExprlistContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$FactorContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$File_inputContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Flow_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$For_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$FuncdefContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Global_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$If_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Import_as_nameContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Import_as_namesContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Import_fromContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Import_nameContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Import_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$IntegerContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$LambdefContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Lambdef_nocondContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Nonlocal_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Not_testContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$NumberContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Or_testContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$ParametersContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Pass_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$PowerContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Raise_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Return_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Shift_exprContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Simple_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Single_inputContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$SliceopContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Small_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Star_exprContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$StmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$StringContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$SubscriptContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$SubscriptlistContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$SuiteContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$TermContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$TestContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Test_nocondContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$TestlistContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Testlist_compContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Testlist_star_exprContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$TfpdefContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$TrailerContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Try_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$TypedargslistContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$VarargslistContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$VfpdefContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$While_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$With_itemContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$With_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Xor_exprContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Yield_argContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Yield_exprContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser$Yield_stmtContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Parser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/pythonast/parser/Python3Visitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/report/PTYPE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/report/Plagiarism.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/report/Report.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/report/StandardPlagiarism.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/report/StandardReport.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileContent/annotation-processors.bin" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Untitled Diagram.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/AnalysisBBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/ApiBBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/LoaderBBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/ProgramBBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/SampleBBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/whiteBoxTests/AnalysisWBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/whiteBoxTests/LoaderWBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/whiteBoxTests/ProgramWBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/whiteBoxTests/ReportWBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar.original" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.AnalysisBBTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.ApiBBTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.LoaderBBTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.ProgramBBTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.SampleBBTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.AnalysisWBTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.LoaderWBTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ProgramWBTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ReportWBTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/blackBoxTests.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/whiteBoxTests.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/public/js/jquery-linedtextarea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/public/js/upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.AnalysisBBTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.ApiBBTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.LoaderBBTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.ProgramBBTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.SampleBBTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.AnalysisWBTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.LoaderWBTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ProgramWBTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ReportWBTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/css/jquery-linedtextarea.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/css/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/img/pi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/js/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/js/jquery-linedtextarea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/js/upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/services/io.service.client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/controllers/analysis.controller.client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/controllers/upload.controller.client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/templates/analysis.view.client.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/templates/home.view.client.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/templates/upload.view.client.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/js/jquery-linedtextarea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/js/upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/python/compare/a76ea15b-e50c-477f-8cf4-42b7dc2a8c68/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/python/origin/537ceec7-96ca-4cbe-81b4-13116cf569db/test.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileContent/fileContent.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/resourceHashesCache.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/java/main/API/Controllers/PiController.class" afterPath="$PROJECT_DIR$/build/classes/java/main/API/Controllers/PiController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/java/main/API/Services/IOService.class" afterPath="$PROJECT_DIR$/build/classes/java/main/API/Services/IOService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/java/main/Analysis/TEDAnalysis.class" afterPath="$PROJECT_DIR$/build/classes/java/main/Analysis/TEDAnalysis.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/java/main/Program/PythonNode.class" afterPath="$PROJECT_DIR$/build/classes/java/main/Program/PythonNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/ProjectPi-all-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/build/libs/ProjectPi-all-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/ProjectPi-all-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/build/libs/ProjectPi-all-1.0-SNAPSHOT.jar.original" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar" afterPath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar.original" afterPath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3BaseListener.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3BaseListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3BaseVisitor.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3BaseVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Lexer.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Lexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Listener.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Listener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Parser.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Visitor.java" afterPath="$PROJECT_DIR$/build/generated-src/pythonast/parser/Python3Visitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.AnalysisBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.AnalysisBBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.LoaderBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.LoaderBBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.ProgramBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.ProgramBBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.SampleBBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.SampleBBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.AnalysisWBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.AnalysisWBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.LoaderWBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.LoaderWBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ProgramWBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ProgramWBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ReportWBTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ReportWBTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/blackBoxTests.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/blackBoxTests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/whiteBoxTests.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/whiteBoxTests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/public/css/jquery-linedtextarea.css" afterPath="$PROJECT_DIR$/build/resources/main/public/css/jquery-linedtextarea.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/public/js/jquery-linedtextarea.js" afterPath="$PROJECT_DIR$/build/resources/main/public/js/jquery-linedtextarea.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/public/views/templates/analysis.view.client.html" afterPath="$PROJECT_DIR$/build/resources/main/public/views/templates/analysis.view.client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.AnalysisBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.AnalysisBBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.LoaderBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.LoaderBBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.ProgramBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.ProgramBBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.SampleBBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.SampleBBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.AnalysisWBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.AnalysisWBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.LoaderWBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.LoaderWBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ProgramWBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ProgramWBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ReportWBTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ReportWBTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/public/css/jquery-linedtextarea.css" afterPath="$PROJECT_DIR$/out/production/resources/public/css/jquery-linedtextarea.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/public/js/jquery-linedtextarea.js" afterPath="$PROJECT_DIR$/out/production/resources/public/js/jquery-linedtextarea.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/API/Controllers/PiController.java" afterPath="$PROJECT_DIR$/src/main/java/API/Controllers/PiController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/API/Services/IOService.java" afterPath="$PROJECT_DIR$/src/main/java/API/Services/IOService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/css/jquery-linedtextarea.css" afterPath="$PROJECT_DIR$/src/main/resources/public/css/jquery-linedtextarea.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/js/jquery-linedtextarea.js" afterPath="$PROJECT_DIR$/src/main/resources/public/js/jquery-linedtextarea.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/whiteBoxTests/ReportWBTest.java" afterPath="$PROJECT_DIR$/src/test/java/whiteBoxTests/ReportWBTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/public/views/controllers/analysis.controller.client.js" afterPath="$PROJECT_DIR$/build/resources/main/public/views/controllers/analysis.controller.client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/public/views/controllers/upload.controller.client.js" afterPath="$PROJECT_DIR$/build/resources/main/public/views/controllers/upload.controller.client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Program/PythonNode.java" afterPath="$PROJECT_DIR$/src/main/java/Program/PythonNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/views/controllers/analysis.controller.client.js" afterPath="$PROJECT_DIR$/src/main/resources/public/views/controllers/analysis.controller.client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/views/controllers/upload.controller.client.js" afterPath="$PROJECT_DIR$/src/main/resources/public/views/controllers/upload.controller.client.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -207,7 +99,7 @@
       <file leaf-file-name="AnalysisBBTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/blackBoxTests/AnalysisBBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
+            <state relative-caret-position="225">
               <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
@@ -227,9 +119,11 @@
       <file leaf-file-name="PythonLoader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/loader/PythonLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="345">
+              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -257,9 +151,11 @@
       <file leaf-file-name="PythonNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/program/PythonNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <marker date="1512844111000" expanded="false" signature="2187:2193" ph=" }" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -555,7 +451,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4538072088000" />
+        <entry key="$PROJECT_DIR$" value="4538082725000" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2882939014" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1124708390" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="631607866" />
@@ -713,7 +609,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -743,8 +639,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -968,21 +864,6 @@
       <module name="11" />
       <envs />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="11" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -1050,6 +931,21 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="11" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="11" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1157,12 +1053,12 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="798" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="798" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1170,7 +1066,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1187,6 +1083,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1206,7 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1230,7 +1126,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding />
+          <folding>
+            <marker date="1512844111000" expanded="false" signature="2187:2193" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1246,7 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1310,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,7 +1227,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
+          <folding>
+            <marker date="1512844111000" expanded="false" signature="2187:2193" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1393,7 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,7 +1349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1461,7 +1356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1499,9 +1393,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/program/PythonNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1512844111000" expanded="false" signature="2187:2193" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1523,7 +1419,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/blackBoxTests/AnalysisBBTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
+        <state relative-caret-position="225">
           <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding />
         </state>
@@ -1539,9 +1435,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/loader/PythonLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

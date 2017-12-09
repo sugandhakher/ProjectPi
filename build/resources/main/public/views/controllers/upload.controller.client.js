@@ -30,6 +30,8 @@
                 $scope.dropClass2 = ''
             })
         }
+
+        //============== event listener =============
         dropbox.addEventListener("dragenter", dragEnterLeave, false)
         dropbox2.addEventListener("dragenter", dragEnterLeave2, false)
         dropbox.addEventListener("dragleave", dragEnterLeave, false)
@@ -143,7 +145,7 @@
 
             });
         };
-
+        //============== upload =============
         $scope.uploadFile = function() {
             var fd = new FormData()
             for (var i in $scope.files1) {
@@ -156,7 +158,6 @@
                 sharedList.addItemTo2($scope.files2)
             }
 
-
             var request = {
                 method: 'POST',
                 url: "/api/upload",
@@ -168,7 +169,6 @@
             };
 
             $http(request)
-
                 .then(function (Response) {
                     var id1 = Response.data.id1
                     var id2 = Response.data.id2
@@ -176,52 +176,11 @@
                     $location.url( url);
                     //window.location.href = url;
                 })
-
-            // $http({
-            //     url: "/api/upload",
-            //     method: "POST",
-            //     headers: {
-            //         'Content-Type': undefined
-            //     },
-            //     params: {uploadfile: $scope.files1, uploadfile2: $scope.files2}
-            // });
-           // document.getElementById("upload").submit();
-
-            // var xhr = new XMLHttpRequest()
-            // xhr.upload.addEventListener("progress", uploadProgress, false)
-            // xhr.addEventListener("load", uploadComplete, false)
-            // xhr.addEventListener("error", uploadFailed, false)
-            // xhr.addEventListener("abort", uploadCanceled, false)
-            // xhr.open("POST", "/api/upload")
-            // $scope.progressVisible = true
-            // xhr.send(fd)
+                .error(function (error) {
+                    alert("upload error, try again")
+                })
         }
 
-        function uploadProgress(evt) {
-            $scope.$apply(function(){
-                if (evt.lengthComputable) {
-                    $scope.progress = Math.round(evt.loaded * 100 / evt.total)
-                } else {
-                    $scope.progress = 'unable to compute'
-                }
-            })
-        }
-
-        function uploadComplete(evt) {
-            /* This event is raised when the server send back a response */
-            alert(evt.target.responseText)
-        }
-
-        function uploadFailed(evt) {
-            alert("There was an error attempting to upload the file.")
-        }
-
-        function uploadCanceled(evt) {
-            $scope.$apply(function(){
-                $scope.progressVisible = false
-            })
-            alert("The upload has been canceled by the user or the browser dropped the connection.")
-        }
 
     }
 })();

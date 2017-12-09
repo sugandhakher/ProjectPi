@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="blackBoxTests.ProgramBBTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-12-09T15:39:26" hostname="Sugandhas-MacBook-Air.local" time="0.326">
+<testsuite name="blackBoxTests.ProgramBBTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-12-09T18:36:47" hostname="Sugandhas-MacBook-Air.local" time="0.081">
   <properties/>
-  <testcase name="test" classname="blackBoxTests.ProgramBBTest" time="0.326"/>
+  <testcase name="test" classname="blackBoxTests.ProgramBBTest" time="0.081"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

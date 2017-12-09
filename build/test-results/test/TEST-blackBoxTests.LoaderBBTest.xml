@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="blackBoxTests.LoaderBBTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-12-09T15:39:13" hostname="Sugandhas-MacBook-Air.local" time="2.897">
+<testsuite name="blackBoxTests.LoaderBBTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-12-09T18:36:40" hostname="Sugandhas-MacBook-Air.local" time="1.126">
   <properties/>
-  <testcase name="test1" classname="blackBoxTests.LoaderBBTest" time="2.15"/>
-  <testcase name="test2" classname="blackBoxTests.LoaderBBTest" time="0.736"/>
+  <testcase name="test1" classname="blackBoxTests.LoaderBBTest" time="0.799"/>
+  <testcase name="test2" classname="blackBoxTests.LoaderBBTest" time="0.32"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
