@@ -20,14 +20,18 @@ public class PythonNode implements Node {
     // note: trees need not be binary
     ArrayList<Node> children = new ArrayList<Node>();
     PythonNode leftmost; // used by the recursive O(n) leftmost() function
+    int startline;
+    int endline;
 
     /**
      * Constructor that takes NodeAdaptor and assigns its context, label, start line and end line to Python node
      */
     public PythonNode(NodeAdapter adp) {
-        adaptee = adp;
+
         label = adp.getNodeLabel();
         context = adp.getNodeContext();
+        startline = adp.getStartLine();
+        endline = adp.getEndLine();
 
 
     }
@@ -37,6 +41,8 @@ public class PythonNode implements Node {
      */
     public PythonNode(String l) {
         this.label = l;
+        startline = 0;
+        endline = 0;
     }
 
     /**
@@ -92,10 +98,7 @@ public class PythonNode implements Node {
      */
     @Override
     public int getStartline() {
-        if(adaptee != null)
-            return adaptee.getStartLine();
-        else
-            return 0;
+        return startline;
     }
 
     /**
@@ -103,11 +106,7 @@ public class PythonNode implements Node {
      */
     @Override
     public int getEndline() {
-
-        if (adaptee != null)
-            return adaptee.getEndLine();
-        else
-            return 0;
+        return endline;
     }
 
     /**

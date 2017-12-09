@@ -5,8 +5,8 @@ import analysis.TEDAnalysis;
 import loader.LoaderFactory;
 import loader.PythonLoader;
 import org.junit.Test;
-import program.*;
-import report.*;
+import program.Program;
+import report.Plagiarism;
 
 import java.io.IOException;
 

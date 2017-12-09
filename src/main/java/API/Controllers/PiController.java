@@ -1,6 +1,5 @@
 package api.Controllers;
 
-import api.Services.AnalysisService;
 import api.Services.IOService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,8 +23,8 @@ public class PiController {
     @ResponseBody
     public ResponseEntity<Map<String, String>> uploadFile(
             @RequestParam("uploadfile") MultipartFile[] uploadfile,
-            @RequestParam("uploadfile2") MultipartFile[] uploadfile2
-            ) throws IOException {
+            @RequestParam("uploadfile2") MultipartFile[] uploadfile2,
+            HttpServletResponse response) throws IOException {
         Map<String, String> m = new HashMap<String, String>();
         try {
 //             Get the filename and build the local file path (be sure that the
@@ -71,7 +70,7 @@ public class PiController {
         String projectPath1 = directory + "/origin/" + projectId1;
         String projectPath2 = directory + "/compare/" + projectId2;
 
-        Report report = AnalysisService.analysis(projectPath1, projectPath2);
+        Report report = IOService.analysis(projectPath1, projectPath2);
         return new ResponseEntity<Report>(report, HttpStatus.OK);
     }
 

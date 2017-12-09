@@ -20,12 +20,11 @@
         model.compareProject = sharedList.getList2();
         model.display = false;
         //functions
-        //============== close code window =============
+
         function closeCompare() {
             model.display = false;
 
         }
-        //============== show compare wndow =============
         function showcompare(nameorigin,namecompare){
             model.display = true;
             var reader = new FileReader();
@@ -61,11 +60,10 @@
 
 
         }
-// back
+
         function back() {
             window.location.href = "#!/upload";
         }
-        //==============analysis =============
         function runAnalysis(){
             var url = "/api/analysis/" + model.filename1 + "/" + model.filename2;
             $http.get(url)
