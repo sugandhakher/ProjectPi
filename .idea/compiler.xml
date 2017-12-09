@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="11_main" target="1.8" />
       <module name="11_test" target="1.8" />
+      <module name="ProjectPi_main" target="1.8" />
+      <module name="ProjectPi_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
