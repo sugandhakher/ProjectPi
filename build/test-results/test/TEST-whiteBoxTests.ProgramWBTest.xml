@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="whiteBoxTests.ProgramWBTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-12-06T00:10:12" hostname="Sugandhas-MacBook-Air.local" time="0.0">
+<testsuite name="whiteBoxTests.ProgramWBTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-12-09T02:19:14" hostname="Sugandhas-MacBook-Air.local" time="0.0">
   <properties/>
   <testcase name="test" classname="whiteBoxTests.ProgramWBTest" time="0.0"/>
   <testcase name="test2" classname="whiteBoxTests.ProgramWBTest" time="0.0"/>

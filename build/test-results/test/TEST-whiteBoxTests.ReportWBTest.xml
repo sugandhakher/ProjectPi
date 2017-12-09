@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="whiteBoxTests.ReportWBTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-12-06T00:10:12" hostname="Sugandhas-MacBook-Air.local" time="0.962">
+<testsuite name="whiteBoxTests.ReportWBTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-12-09T02:19:14" hostname="Sugandhas-MacBook-Air.local" time="0.907">
   <properties/>
-  <testcase name="plagSet" classname="whiteBoxTests.ReportWBTest" time="0.01"/>
-  <testcase name="testConfidence" classname="whiteBoxTests.ReportWBTest" time="0.952"/>
+  <testcase name="plagSet" classname="whiteBoxTests.ReportWBTest" time="0.011"/>
+  <testcase name="testConfidence" classname="whiteBoxTests.ReportWBTest" time="0.895"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

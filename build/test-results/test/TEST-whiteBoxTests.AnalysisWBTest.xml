@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="whiteBoxTests.AnalysisWBTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-12-06T00:10:00" hostname="Sugandhas-MacBook-Air.local" time="12.08">
+<testsuite name="whiteBoxTests.AnalysisWBTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-12-09T02:19:02" hostname="Sugandhas-MacBook-Air.local" time="11.373">
   <properties/>
-  <testcase name="divideSimple" classname="whiteBoxTests.AnalysisWBTest" time="0.016"/>
-  <testcase name="changeNameMediumA" classname="whiteBoxTests.AnalysisWBTest" time="0.989"/>
-  <testcase name="divideMedium2" classname="whiteBoxTests.AnalysisWBTest" time="10.195"/>
-  <testcase name="divideSimple2" classname="whiteBoxTests.AnalysisWBTest" time="0.015"/>
-  <testcase name="divideMedium" classname="whiteBoxTests.AnalysisWBTest" time="0.865"/>
+  <testcase name="divideSimple" classname="whiteBoxTests.AnalysisWBTest" time="0.017"/>
+  <testcase name="changeNameMediumA" classname="whiteBoxTests.AnalysisWBTest" time="0.99"/>
+  <testcase name="divideMedium2" classname="whiteBoxTests.AnalysisWBTest" time="9.443"/>
+  <testcase name="divideSimple2" classname="whiteBoxTests.AnalysisWBTest" time="0.019"/>
+  <testcase name="divideMedium" classname="whiteBoxTests.AnalysisWBTest" time="0.904"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
