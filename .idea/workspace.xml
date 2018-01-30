@@ -2,82 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e392abe-1dac-4164-9d93-9fa118e7b78d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Untitled Diagram.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/AnalysisBBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/ApiBBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/LoaderBBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/ProgramBBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/blackBoxTests/SampleBBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/whiteBoxTests/AnalysisWBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/whiteBoxTests/LoaderWBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/whiteBoxTests/ProgramWBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/test/whiteBoxTests/ReportWBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar.original" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.AnalysisBBTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.ApiBBTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.LoaderBBTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.ProgramBBTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/blackBoxTests.SampleBBTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.AnalysisWBTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.LoaderWBTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ProgramWBTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/whiteBoxTests.ReportWBTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/blackBoxTests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/whiteBoxTests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/public/js/jquery-linedtextarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/public/js/upload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.AnalysisBBTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.ApiBBTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.LoaderBBTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.ProgramBBTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-blackBoxTests.SampleBBTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.AnalysisWBTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.LoaderWBTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ProgramWBTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-whiteBoxTests.ReportWBTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/css/jquery-linedtextarea.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/img/pi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/js/functions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/js/jquery-linedtextarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/js/upload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/services/io.service.client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/controllers/analysis.controller.client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/controllers/upload.controller.client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/templates/analysis.view.client.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/templates/home.view.client.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/resources/public/views/templates/upload.view.client.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/js/jquery-linedtextarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/js/upload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/python/compare/a76ea15b-e50c-477f-8cf4-42b7dc2a8c68/test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/python/origin/537ceec7-96ca-4cbe-81b4-13116cf569db/test.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileContent/fileContent.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.3.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/java/main/Program/PythonNode.class" afterPath="$PROJECT_DIR$/build/classes/java/main/Program/PythonNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/ProjectPi-all-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/build/libs/ProjectPi-all-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/ProjectPi-all-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/build/libs/ProjectPi-all-1.0-SNAPSHOT.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar" afterPath="$PROJECT_DIR$/build/libs/gs-actuator-service-0.1.0.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/ProjectPi-all-1.0-SNAPSHOT.jar.original" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/public/views/controllers/analysis.controller.client.js" afterPath="$PROJECT_DIR$/build/resources/main/public/views/controllers/analysis.controller.client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/public/views/controllers/upload.controller.client.js" afterPath="$PROJECT_DIR$/build/resources/main/public/views/controllers/upload.controller.client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Program/PythonNode.java" afterPath="$PROJECT_DIR$/src/main/java/Program/PythonNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/views/controllers/analysis.controller.client.js" afterPath="$PROJECT_DIR$/src/main/resources/public/views/controllers/analysis.controller.client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/views/controllers/upload.controller.client.js" afterPath="$PROJECT_DIR$/src/main/resources/public/views/controllers/upload.controller.client.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -119,7 +45,7 @@
       <file leaf-file-name="PythonLoader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/loader/PythonLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="195">
               <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -610,6 +536,9 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -639,9 +568,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1054,7 +980,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="798" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1066,7 +991,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1198,7 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1260,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1270,7 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,7 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1327,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1435,7 +1354,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/loader/PythonLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="195">
           <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
